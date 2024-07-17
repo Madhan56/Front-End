@@ -1,9 +1,20 @@
+:root {
+  --glass-background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0)
+  );
+  --glass-backdrop-filter: blur(10px);
+  --glass-box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+}
+
 * {
   margin: 0;
   padding: 0;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   box-sizing: border-box;
 }
+
 body {
   position: fixed;
   width: 100%;
@@ -11,6 +22,7 @@ body {
   overflow: hidden;
   /* Helps to keep the content in the centre and makes it non-scrollable */
 }
+
 .background-video {
   position: fixed;
   top: 0;
@@ -21,16 +33,20 @@ body {
   z-index: -1;
   /* Ensures the backround is behind the content */
 }
+
 .card {
-  background-color: rgba(0, 10, 30, 0.6);
-  border-radius: 25px;
   width: 80%;
   text-align: center;
   padding: 3%;
-  color: rgba(255, 255, 255, 0.8);
   max-width: 500px;
   margin: 10% auto;
+  border-radius: 25px;
+  background-color: var(--glass-background);
+  -webkit-backdrop-filter: var(--glass-backdrop-filter);
+  backdrop-filter: var(--glass-backdrop-filter);
+  box-shadow: var(--glass-box-shadow);
 }
+
 .search input {
   border-radius: 20px;
   padding: 5%;
@@ -40,34 +56,42 @@ body {
   border: 0;
   width: 75%;
 }
+
 .weather {
   margin-bottom: auto;
   display: none;
 }
+
 .weather .city {
   margin-bottom: 2%;
 }
+
 .details {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 .col img {
   width: 10px;
   color: white;
 }
+
 .details .col {
   display: flex;
   align-items: center;
 }
+
 .details .col img {
   width: 60px;
 }
+
 .weather img {
   width: 100px;
   margin-top: 20px;
   margin-right: 10px;
 }
+
 .error {
   text-align: center;
   padding-top: 10%;
