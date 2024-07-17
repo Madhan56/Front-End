@@ -5,12 +5,14 @@
   font-family: "Times New Roman", Times, serif;
   box-sizing: border-box;
 }
+
 .container {
   width: 100%;
   min-height: 100vh;
   background: linear-gradient(135deg, #153677,#4e085f);
   padding: 10px;
 }
+
 .to-do {
   width: 100%;
   max-width: 540px;
@@ -18,13 +20,13 @@
   margin: 100px auto 200px;
   padding: 40px 30px 70px;
   border-radius: 15px;
-
 }
+
 .to-do h2 {
   color: #002765;
   margin-bottom: 20px;
-
 }
+
 .row {
   display: flex;
   align-items: center;
@@ -34,6 +36,7 @@
   padding-left: 20px;
   margin-bottom: 25px;
 }
+
 input {
   flex: 1;
   border: none;
@@ -41,9 +44,8 @@ input {
   background: transparent;
   padding: 10px;
   font-weight: 15px;
-
-  
 }
+
 button {
   border: none;
   outline: none;
@@ -54,6 +56,7 @@ button {
   font-size: 16px;
   cursor: pointer;
 }
+
 ul li {
   list-style: none;
   font-size: 18px;
@@ -62,6 +65,7 @@ ul li {
   cursor: pointer;
   position: relative;
 }
+
 ul li::before {
   content: " ";
   position: absolute;
@@ -74,13 +78,16 @@ ul li::before {
   top: 12px;
   left: 8px;
 }
+
 ul li.checked {
   color: #555;
   text-decoration: line-through;
 }
+
 ul li.checked::before {
   background-image: url(img/checked.png);
 }
+
 ul li span {
   position: absolute;
   right: 0;
@@ -93,6 +100,7 @@ ul li span {
   text-align: center;
   border-radius: 50%;
 }
+
 ul li span:hover {
   background: #edeef0;
 }
