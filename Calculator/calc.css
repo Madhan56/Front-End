@@ -4,35 +4,38 @@
   box-sizing: border-box;
   background: linear-gradient(to right, #ff7e5f, #feb47b);
 }
+
 body {
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .calculator {
   border-radius: 25px;
   width: 375px;
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8);
 }
+
 #display {
   /* background: #444; */
   background: #333;
-
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2), inset 0 -5px 5px rgba(0, 0, 0, 0.1);
-
   color: white;
   font-size: 2.5em;
   padding: 20px;
   text-align: right;
   border-radius: 20px 20px 0 0;
 }
+
 .buttons {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   background: #444;
 }
+
 button {
   color: white;
   background: #444;
@@ -45,20 +48,22 @@ button {
   border-radius: 50%;
   margin: 15px;
   transition: background 0.8s ease;
-
   box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.05),
-    5px 5px 15px rgba(0, 0, 0, 0.08), inset 0 2px 2px rgba(0, 0, 0, 0.05),
-    0 0 10px rgba(34, 34, 34, 0.3), 0 0 15px rgba(34, 34, 34, 0.2);
+               5px 5px 15px rgba(0, 0, 0, 0.08), inset 0 2px 2px rgba(0, 0, 0, 0.05),
+               0 0 10px rgba(34, 34, 34, 0.3), 0 0 15px rgba(34, 34, 34, 0.2);
 }
+
 button:nth-child(4n) {
   background: #ff765f;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3), 0 6px 20px rgba(0, 0, 0, 0.19),
-    inset 0 -3px 2px rgba(0, 0, 0, 0.1), 0 0 10px rgba(255, 126, 95, 0.5),
-    0 0 15px rgba(255, 126, 95, 0.4);
+              inset 0 -3px 2px rgba(0, 0, 0, 0.1), 0 0 10px rgba(255, 126, 95, 0.5),
+              0 0 15px rgba(255, 126, 95, 0.4);
 }
+
 button:hover {
   background: #555;
 }
+
 button:nth-child(4n):hover {
   background: #feb47b;
 }
