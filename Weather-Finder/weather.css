@@ -34,8 +34,7 @@ body {
   /* Ensures the backround is behind the content */
 }
 
-.card 
-{
+.card {
   width: 80%;
   text-align: center;
   padding: 3%;
