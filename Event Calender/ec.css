@@ -1,0 +1,147 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+  }
+  
+  .calendar-container {
+    width: 450px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+  }
+  
+  .calendar-container:hover {
+    transform: scale(1.02);
+  }
+  
+  .calendar {
+    padding: 20px;
+  }
+  
+  .month {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .month button {
+    background-color: #ff6b6b;
+    border: none;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 16px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .month button:hover {
+    background-color: #ff4d4d;
+    transform: scale(1.1);
+  }
+  
+  .month h2 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .weekdays, .days {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .weekdays div, .days div {
+    width: calc(100% / 7);
+    text-align: center;
+    padding: 10px 0;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .weekdays div {
+    font-weight: bold;
+    background-color: #ffe4e1;
+    color: #333;
+  }
+  
+  .days div {
+    cursor: pointer;
+    background-color: #fff;
+    color: #333;
+  }
+  
+  .days div:hover {
+    background-color: #ff6b6b;
+    color: #fff;
+  }
+  
+  .days .event {
+    background-color: #ff6b6b;
+    color: #fff;
+  }
+  
+  .event-form {
+    padding: 20px;
+    border-top: 1px solid #ddd;
+    background-color: #ffffff;
+  }
+  
+  .event-form h3 {
+    margin-top: 0;
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+  }
+  
+  .event-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #666;
+  }
+  
+  .event-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s ease;
+  }
+  
+  .event-form input:focus {
+    border-color: #ff6b6b;
+    outline: none;
+  }
+  
+  .event-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #ff6b6b;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .event-form button:hover {
+    background-color: #ff4d4d;
+    transform: scale(1.05);
+  }
+  
