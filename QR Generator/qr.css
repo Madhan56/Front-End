@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background: linear-gradient(120deg, #3b3b98, #663399, #8e44ad, #663399, #3b3b98);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  background-color: #f7f7f7;
+  width: 400px;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 15px 20px rgba(0, 0, 0, 0.4);
+  text-align: center;
+}
+
+.container p {
+  font-size: 22px;
+  margin-bottom: 25px;
+  font-weight: 600;
+  color: #444;
+}
+
+.container input {
+  width: 100%;
+  height: 45px;
+  padding: 10px;
+  outline: none;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  margin: 15px 0;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.container input:focus {
+  border-color: #663399;
+  box-shadow: 0 0 5px rgba(102, 51, 153, 0.5);
+}
+
+.container button {
+  height: 45px;
+  width: 100%;
+  background: linear-gradient(120deg, #3b3b98, #8e44ad, #ff6347);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(119, 116, 121, 0.3);
+  outline: none;
+  margin: 25px 0;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s, box-shadow 0.3s;
+}
+
+.container button:hover {
+  background: linear-gradient(120deg, #2a2a72, #9b59b6, #e74c3c);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 15px rgba(119, 116, 121, 0.5);
+}
+
+#imgBox {
+  width: 200px;
+  max-height: 0;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: max-height 1s, border 0.5s, box-shadow 0.5s;
+}
+
+#imgBox img {
+  width: 100%;
+  padding: 10px;
+}
+
+#imgBox.show-img {
+  max-height: 300px;
+  margin: 15px auto;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.error {
+  animation: shake 0.3s ease-in-out 1;
+}
+
+@keyframes shake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-10px);
+  }
+  50% {
+    transform: translateX(10px);
+  }
+  75% {
+    transform: translateX(-10px);
+  }
+}
