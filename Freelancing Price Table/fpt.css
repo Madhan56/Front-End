@@ -1,0 +1,221 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 15px;
+}
+
+body {
+  overflow-y: scroll;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  background-color: hsl(210, 50%, 98%);
+  background-image: url("images/bg-top.svg"), url("images/bg-bottom.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 30%, 30%;
+  background-position:
+    top 0 right -1rem,
+    bottom -4.7rem left -1.9rem;
+}
+
+main {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+}
+
+h1 {
+  color: hsl(210, 22%, 30%);
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  padding: 5rem;
+  padding-bottom: 0;
+  gap: 2.6rem;
+}
+
+.pricing-container {
+  display: grid;
+  width: 72%;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0 auto;
+  margin-top: 5.8rem;
+  max-width: 1440px;
+}
+
+.pricing {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  border-radius: 10px;
+  padding: 2.1rem 0.8rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container-2 {
+  background: linear-gradient(hsl(174, 70%, 55%), hsl(150, 70%, 60%));
+  color: white;
+  margin-top: -1.6rem;
+  margin-bottom: -1.6rem;
+  padding: 3rem 1rem;
+}
+
+.container-1,
+.container-3 {
+  background-color: white;
+  gap: 1.3rem;
+}
+
+.pricing h2 {
+  font-size: 1.23rem;
+  font-weight: 700;
+}
+
+.container-1 h2,
+.container-1 li,
+.container-3 h2,
+.container-3 li {
+  color: hsl(210, 22%, 30%);
+}
+
+.pricing p {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin: 0 auto;
+  font-size: 4.6rem;
+}
+
+.dollar-sign {
+  font-size: 2.5rem;
+}
+
+.container-1 p,
+.container-3 p {
+  color: hsl(210, 22%, 20%);
+}
+
+hr {
+  width: 90%;
+  border-width: 0.5px;
+  margin: 0 auto;
+  border-color: hsl(210, 22%, 80%);
+  border-style: solid;
+  opacity: 0.5;
+}
+
+.pricing ul {
+  list-style: none;
+  margin-top: 10px;
+}
+
+.pricing ul li {
+  padding: 1.06rem;
+}
+
+.pricing button {
+  cursor: pointer;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 1rem;
+  border-radius: 5px;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 1px;
+  padding: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  word-spacing: 3px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.container-2 button {
+  color: hsl(174, 70%, 55%);
+  background-color: white;
+  transition: all ease-in-out 0.3s;
+}
+
+.container-1 button,
+.container-3 button {
+  color: white;
+  background: linear-gradient(hsl(174, 70%, 55%), hsl(150, 70%, 60%));
+  background-repeat: no-repeat;
+  transition: background ease-in-out 0.3s;
+  transition: color ease-in-out 0.3s;
+}
+
+@media (hover: hover) {
+  .container-1 button:hover,
+  .container-3 button:hover {
+    background: transparent;
+    border-color: hsl(210, 22%, 80%);
+    color: hsl(174, 70%, 55%);
+    border-width: 1px;
+  }
+
+  .container-2 button:hover {
+    background-color: transparent;
+    border-color: white;
+    color: white;
+    border-width: 1px;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .pricing-container {
+    width: 50%;
+    grid-template-columns: 1fr;
+    margin-top: 5.8rem;
+    gap: 5rem;
+  }
+
+  .container-2 {
+    margin-top: initial;
+    margin-bottom: initial;
+  }
+
+  .container-2 ul li {
+    padding: 1.06rem;
+  }
+
+  .container-2 h2 {
+    padding-top: initial;
+  }
+
+  .container-2 p {
+    margin-top: initial;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    background-size: 80%, 26.5%;
+    background-position:
+      top 0 right -10rem,
+      bottom -4.7rem left -1.9rem;
+  }
+  .pricing-container {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .pricing-container {
+    width: 90%;
+  }
+}
