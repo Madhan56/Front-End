@@ -14,7 +14,6 @@ body {
   box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
   background-color: hsl(210, 50%, 98%);
-  background-image: url("images/bg-top.svg"), url("images/bg-bottom.svg");
   background-repeat: no-repeat, no-repeat;
   background-size: 30%, 30%;
   background-position:
