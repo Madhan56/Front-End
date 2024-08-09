@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <link rel="stylesheet" href="dc.css">
+    <script type="text/javascript" src="dc.js"></script>
+</head>
+<body>
+  <div class="container">
+    <div id="time">
+      <div class="circle" style="--color: #ff2972">
+        <div class="dots hour-dot"></div> 
+        <svg>
+          <circle cx="70" cy="70" r="70"></circle>
+          <circle cx="70" cy="70" r="70" id="hour-circle"></circle> 
+        </svg>
+        <div id="hour-display">00</div> 
+      </div>
+      <div class="circle" style="--color: #fee800">
+        <div class="dots minute-dot"></div> 
+        <svg>
+          <circle cx="70" cy="70" r="70"></circle>
+          <circle cx="70" cy="70" r="70" id="minute-circle"></circle> 
+        </svg>
+        <div id="minute-display">00</div> 
+      </div>
+      <div class="circle" style="--color: #04fc43">
+        <div class="dots second-dot"></div> 
+        <svg>
+          <circle cx="70" cy="70" r="70"></circle>
+          <circle cx="70" cy="70" r="70" id="second-circle"></circle> 
+        </svg>
+        <div id="second-display">00</div> 
+      </div>
+      <div class="ap">
+        <div id="ampm-display">AM</div> 
+      </div>
+    </div>
+  </div>
+</body>
+</html>
