@@ -1,0 +1,96 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e3f2fd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    width: 320px;
+}
+
+h1 {
+    text-align: center;
+    color: #1565c0;
+    font-size: 24px;
+}
+
+.note-input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+#noteContent {
+    padding: 12px;
+    border-radius: 6px;
+    border: 2px solid #90caf9;
+    margin-bottom: 12px;
+    font-size: 14px;
+    resize: none;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+#noteContent:focus {
+    border-color: #1565c0;
+}
+
+button {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #42a5f5;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1e88e5;
+}
+
+#notesContainer {
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.note {
+    background-color: #f1f8e9;
+    padding: 10px;
+    border: 2px solid #aed581;
+    border-radius: 8px;
+    margin-bottom: 12px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.note:hover {
+    transform: scale(1.02);
+}
+
+.deleteBtn {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: #e57373;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    padding: 5px 8px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: background-color 0.3s ease;
+}
+
+.deleteBtn:hover {
+    background-color: #ef5350;
+}
