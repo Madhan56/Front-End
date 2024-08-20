@@ -1,0 +1,69 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #121212;  
+    margin: 0;
+    color: #fff;
+}
+
+.timer-container {
+    text-align: center;
+    padding: 30px;
+    background: #1e1e1e;  
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.7);  
+}
+
+.time-display {
+    font-size: 80px;
+    color: #00ffcc;  
+    text-shadow: 0 0 25px #00ffcc, 0 0 10px #00ffcc;  
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+input[type="text"] {
+    padding: 12px;
+    font-size: 18px;
+    width: 180px;
+    background-color: #333;  
+    border: 2px solid #00ffcc;
+    border-radius: 10px;
+    color: #fff;
+    outline: none;
+    text-align: center;
+    box-shadow: inset 0 0 5px rgba(0, 255, 204, 0.5);  
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input[type="text"]:focus {
+    background-color: #444;  
+    box-shadow: inset 0 0 10px rgba(0, 255, 204, 0.7);  
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 18px;
+    background-color: #00ffcc;
+    color: #000;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-weight: 600;
+    box-shadow: 0 5px 15px rgba(0, 255, 204, 0.4);  
+}
+
+button:hover {
+    background-color: #00e6b8;
+    transform: scale(1.05); 
+}
+
+.controls {
+    margin-top: 20px;
+}
